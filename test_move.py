@@ -32,8 +32,7 @@ async def play(robot):
     while True: 
 
         # await robot.turn_left(180)  
-        await robot.move(150) 
-        break 
+     
         # await robot.play_note(Note.A5, .05)  #sonore 
         sensors = await getSensors(robot)
         output3 = await sr.agir(sensors, focus=3)  
